@@ -1,0 +1,45 @@
+.composition {
+  position: relative;
+}
+
+.composition_photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(12, 12, 12, 0.651);
+          box-shadow: 0 1.5rem 4rem rgba(12, 12, 12, 0.651);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 1rem;
+}
+
+.composition_photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition_photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition_photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition_photo:hover {
+  outline: 1.5rem solid #07e651;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(12, 12, 12, 0.863);
+          box-shadow: 0 2.5rem 4rem rgba(12, 12, 12, 0.863);
+  z-index: 20;
+}
+
+.composition_photo:hover .composition_photo_photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+/*# sourceMappingURL=composition.css.map */

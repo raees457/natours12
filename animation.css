@@ -1,0 +1,102 @@
+@-webkit-keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100) rotate(-50deg);
+            transform: translateX(-100) rotate(-50deg);
+  }
+  60% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100) rotate(-50deg);
+            transform: translateX(-100) rotate(-50deg);
+  }
+  60% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes MoveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes MoveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes MoveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100) rotate(-50deg);
+            transform: translateX(-100) rotate(-50deg);
+  }
+  60% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes MoveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*# sourceMappingURL=animation.css.map */

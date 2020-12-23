@@ -1,0 +1,229 @@
+.card{
+//functionality
+padding: 15rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+position: relative;
+height: 52rem;
+
+    &_side{
+        background-color: white;
+        height: 52rem;
+        width: 30rem;
+        transition: all .8s ease  ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        overflow: hidden;
+box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.822);
+&--front{
+background-color: rgba(243, 239, 239, 0.993);
+}
+
+&--back{
+
+
+transform: rotateY(180deg);
+&-1{
+background-image: linear-gradient(to right bottom , #ffb900,#ff7730 );
+}
+&-2{
+    background-image: linear-gradient(to right bottom , #26f502d7,#28b485 );
+    }
+    &-3{
+        background-image: linear-gradient(to right bottom ,  #2998ff,#5543fafb);
+        }
+
+}
+
+    }
+
+    &:hover  &_side--front  {
+        transform: rotateY(-180deg);
+    }
+    &:hover  &_side--back  {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+}
+
+//front side styling
+    &_picture{
+      background-size: cover;
+      height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85% , 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 85% , 0 100%);
+border-top-left-radius:3px ;
+border-top-right-radius:3px ;
+&--1{
+background-image:linear-gradient(to right bottom , #ffd000fd,#fc5406 ),
+ url("../img/nat-5.jpg");
+}
+
+&--2{
+
+    background-image:linear-gradient (to right bottom , #27f502,#28b485 ),
+ url("../img/nat-6.jpg");
+    }
+
+&--3{
+    background-image:linear-gradient (to right bottom , #2998ff,#5643fa ),
+    url("../img/nat-7.jpg");
+
+    }
+
+
+    }
+
+    &_heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgba(255, 245, 245, 0.993) ;
+        text-align: right;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &_heading-span {
+        padding: 1rem 1.5rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        &--1 {
+            background-image:linear-gradient (to right bottom , #ffbb00d7,#ff7830da ) ;
+        }
+        &--2 {
+            background-image:linear-gradient (to right bottom , #27f502,#28b485 ) ;
+        }
+        &--3 {
+            background-image:linear-gradient (to right bottom ,#2998ff,#5643fa) ;
+        }
+
+    }
+    &_details{
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin:0 auto;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+&:not(:last-child){
+    border-bottom: 1px solid   #eee;
+
+}
+            }
+        }
+    }
+   //font side styling
+&_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+    }
+    &_price-box{
+    text-align: center;
+    color: white;
+    margin-bottom: 8rem;
+    }
+    &_price-only{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    }
+
+    &_price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    //@include respond(tab-port){
+        @media (max-width:56.25em),only screen and (hover:none)
+        {
+
+
+            height: auto;
+            border-radius: 3px;
+
+
+                &_side{
+
+background-color: white;
+                    height: auto;
+                    position: relative;
+
+
+
+            &--back{
+            transform: rotateY(0);
+
+            }
+
+                }
+
+                &:hover  &_side--front  {
+                    transform: rotateY(0);
+                    -webkit-transform: rotateY(0);
+                    -moz-transform: rotateY(0);
+                    -ms-transform: rotateY(0);
+                    -o-transform: rotateY(0);
+}
+
+        &_details{
+          padding:1rem  3rem;
+               }
+               //font side styling
+            &_cta {
+                position: relative;
+                top: 0%;
+                left: 0%;
+                transform: translate(0);
+                width: 100%;
+                text-align: center;
+                padding:7rem 4rem 4rem 4rem;
+                -webkit-transform: translate(0);
+                -moz-transform: translate(0);
+                -ms-transform: translate(0);
+                -o-transform: translate(0);
+}
+                &_price-box{
+                margin-bottom: 3rem;
+                }
+
+                &_price-value {
+                    font-size: 4rem;
+
+
+                }
+            }
+        }
+
+
+
+
+
+
+
+

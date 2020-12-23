@@ -1,0 +1,67 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    ($color-primary-light,0.8),
+    ($color-primary,0.8)),
+    url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh,0 100%);
+@media (min-resolution:192dpi) and (min-width:37.5em),
+       (-webkit-min-device-pixel-ratio:2)and(min-width:37.5em),
+       (min-width:125em) {
+    background-image: linear-gradient(to right bottom,
+    ($color-primary-light,0.8),
+    ($color-primary,0.8)),
+    url("../img/hero.jpg");
+}
+@include respond(phone){
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh,0 100%);
+}
+position: relative;
+}
+.logo-box{
+position: absolute;
+top: 40px;
+left: 40px;
+
+}
+
+.heading{
+color:$color-white-light ;
+text-transform: uppercase;
+
+}
+.text-box{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.heading-main{
+display: inline-block;
+font-size:60px ;
+font-weight:400;
+letter-spacing:30px;
+animation-name: MoveInLeft;
+animation-duration: 2s;
+animation-timing-function: ease-in;
+/*
+animation-delay: 3s;
+animation-iteration-count: 3;
+*/
+backface-visibility: hidden;
+
+}
+.heading-main-sub{
+    display:inline-block ;
+font-size:20px ;
+font-weight: 700;
+letter-spacing:17.4px ;
+margin-bottom: 60px;
+}
